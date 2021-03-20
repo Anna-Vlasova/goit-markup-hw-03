@@ -1,3 +1,22 @@
+/* html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+} */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin-top: 0;
+}
+
 :root {
   --focus: #2196f3;
   --logo: #000000;
@@ -24,6 +43,24 @@ ul {
 }
 
 /* Stile header */
+.page-header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  background: var(--backround-header);
+}
+.main-nav {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -38,9 +75,21 @@ ul {
 .logo-web {
   color: var(--focus);
 }
-.page-header {
-  background: var(--backround-header);
+
+.site-nav {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
 }
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+.site-nav .link {
+  display: flex;
+}
+
 .site-nav a {
   color: var(--navigation-title);
   text-decoration: none;
@@ -59,6 +108,14 @@ ul {
 }
 .link.current {
   color: var(--focus);
+}
+.address-header {
+  display: flex;
+  margin-bottom: 0px;
+}
+
+.address-header .item + .item {
+  margin-left: 50px;
 }
 .address-header a {
   color: var(--content-text);
