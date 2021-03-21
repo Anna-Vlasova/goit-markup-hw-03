@@ -8,35 +8,38 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.2.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <!-- Site header -->
 
 <header class="page-header">
-    <nav>
+    <div class="container">
+        <div class="main-nav">
         <a class="logo" href="/index.html"> <span class="logo-web">Web</span>Studio</a>
-        <ul class="site-nav">
-            <li> <a href="./index.html">Студия</a></li>
-            <li> <a href="" class="link current">Портфолио</a></li>
-            <li> <a href="">Контакты</a></li>
-        </ul>
-    </nav>
+        <nav>
+            <ul class="site-nav">
+                <li class="item"> <a href="./index.html">Студия</a></li>
+                <li class="item"> <a href="" class="link current">Портфолио</a></li>
+                <li class="item"> <a href="">Контакты</a></li>
+            </ul>
+        </nav>
 
-    <ul class="address-header">
-        <li> <a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li> <a href="tel:+380961111111">+38 096 111 11 11</a> </li>
-    </ul>
+        <ul class="address-header">
+            <li class="item"> <a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li class="item"> <a href="tel:+380961111111">+38 096 111 11 11</a> </li>
+        </ul>
+        </div>
+    </div>
 </header>
 
 <body>
 <!--Filters-->
 <main>
     <section>
+         <h1 class="title-hidden">Презентация работ</h1>
         <div class="container">
-        <h1 class="title-hidden">Презентация работ</h1>
-
-        <ul>
+        <ul class="button-flex">
             <li> <button class="btn" type="button"> Все </button> </li>
             <li> <button class="btn" type="button"> Веб-сайты </button> </li>
             <li> <button class="btn" type="button"> Приложения </button> </li>
@@ -45,7 +48,8 @@
         </ul>
 
     <!--Products-->
-    <ul>
+    <div class="products-title">
+    <ul class="filter-flex">
         <li class="filter"> <img src="./image/portfolio-foto/img-1-2.jpg" 
             alt="макбук-з-выдкритим-сайтом" width="370" height="294">
                 <h3 class="title">Технокряк</h3> 
@@ -86,24 +90,29 @@
             <h3 class="title">Проект LAB</h3>
             <p class="text">Маркетинг</p>
         </li>
-        <li class="filterDiv Приложения"><img src="./image/portfolio-foto/img-9-2.jpg" 
+        <li class="filter"> <img src="./image/portfolio-foto/img-9-2.jpg" 
             alt="процесс-работы-за-ноутбуком" width="370" height="294">
             <h3 class="title">Growing Business</h3>
             <p class="text">Приложение</p>
         </li> 
     </ul>
-        </div>
+    </div>
+    </div>
     </section>
 </main>
 
 
 <!--Footer-->
-    <footer>
-        <address>
+    <footer class="footer-color">
+        <address class="container">
             <ul class="address-footer">
+                <div class="footer-logo">
                 <li><a class="logo" href="/index.html"> <span class="logo-web">Web</span>Studio</a></li>
+                </div>
                 <li class="post-address">г. Киев, пр-т Леси Украинки,26</li>
+                <div class="add-marg">
                 <li> <a class="address" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                </div>
                 <li> <a class="address" href="tel:+380961111111">+38 096 111 11 11</a> </li>
             </ul>
         </address>
