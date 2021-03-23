@@ -58,7 +58,8 @@ ul {
 }
 .main-nav {
   display: flex;
-  align-items: baseline;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo {
@@ -329,6 +330,12 @@ ul {
 }
 /* PORTFOLIO */
 
+/* Border */
+.border-header {
+  border-bottom: 1px solid #ececec;
+  padding-bottom: 32px;
+}
+
 /* Filters */
 .button-flex {
   display: flex;
@@ -336,7 +343,6 @@ ul {
   justify-content: center;
   padding-top: 94px;
   padding-bottom: 34px;
-  margin-right: 8px;
 }
 .btn {
   width: 145px;
@@ -347,8 +353,14 @@ ul {
   text-align: center;
   color: var(--navigation-title);
   background: var(--backround-our-team);
-  border-radius: 4px;
   cursor: pointer;
+  border: none;
+  margin-right: 8px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.bo:nth-child(5n) {
+  margin-right: 0px;
 }
 
 .btn:hover,
@@ -373,7 +385,9 @@ ul {
 .filter {
   margin-right: 30px;
   margin-top: 30px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .filter:nth-child(3n) {
   margin-right: 0;
@@ -397,4 +411,10 @@ ul {
   font-size: 16px;
   line-height: 1.87;
   margin-bottom: 20px;
+}
+.title-text {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 24px;
+  margin-right: 24px;
 }
