@@ -1,11 +1,11 @@
-/* html {
+html {
   box-sizing: border-box;
 }
 *,
 *::after,
 *::before {
   box-sizing: inherit;
-} */
+}
 h1,
 h2,
 h3,
@@ -385,9 +385,11 @@ ul {
 .filter {
   margin-right: 30px;
   margin-top: 30px;
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  /* flex-basis: calc(100% - (30px * 2) / 3); */
+  /* max-width: 100%;
+  height: auto;
+  display: block; */
 }
 .filter:nth-child(3n) {
   margin-right: 0;
@@ -413,8 +415,9 @@ ul {
   margin-bottom: 20px;
 }
 .title-text {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 24px;
-  margin-right: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  /* border: 1px solid #eeeeee; */
 }
